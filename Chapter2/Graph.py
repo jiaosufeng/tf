@@ -18,7 +18,7 @@ x_vals=np.array([1.0,3.0,5.0,7.0,9.0])
 x_data=tf.placeholder(tf.float32)
 m_const=tf.constant(3.0)
 
-my_product=tf.mul(x_data,m_const)
+my_product=tf.multiply(x_data,m_const)
 
 for x_val in x_vals:
     print(sess.run(my_product,feed_dict={x_data:x_val}))

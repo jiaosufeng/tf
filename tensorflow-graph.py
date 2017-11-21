@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Aug 31 23:45:24 2016
+
+@author: hy
+"""
+
+import tensorflow as tf
+
+matrix1=tf.constant([[3,3]])
+matrix2=tf.constant([[2],[2]])
+
+product=tf.matmul(matrix1,matrix2)
+
+sess=tf.Session()
+
+result=sess.run(product)
+print result
+
+sess.close()
